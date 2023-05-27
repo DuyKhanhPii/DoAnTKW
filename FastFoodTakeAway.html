@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Take Away - Thức ăn nhanh</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Thêm liên kết CSS của Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+    <script>
+		//Xử lý chuyển động của 3 ảnh background
+		window.addEventListener('DOMContentLoaded', function() {
+			var images = ['hero.jpg', 'hero2.jpg', 'hero3.jpg'];
+			var currentIndex = 0;
+			var heroSection = document.querySelector('.hero');
+
+			function changeBackgroundImage() {
+				heroSection.style.backgroundImage = 'url("' + images[currentIndex] + '")';
+				currentIndex = (currentIndex + 1) % images.length;
+			}
+
+			setInterval(changeBackgroundImage, 1000);
+		});
+		
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">Double K - Take Away</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href= "FastFoodTakeAway.html">Trang chủ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Gioithieu.html">Giới thiệu</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="LienHe.html">Liên hệ</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+    <section class="hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<h2>Thức ăn nhanh, tươi ngon và đa dạng</h2>
+				<p>Bạn đang tìm kiếm món ăn nhanh, tiện lợi nhưng vẫn tươi ngon và đa dạng? Hãy đến với Double K - Take Away và trải nghiệm ngay hôm nay!</p>
+			</div>
+			<div class="col-lg-6">
+				<img src="hero.jpg" alt="Hero Image" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="menu">
+	<div class="container">
+		<h2>DANH MỤC MÓN ĂN</h2>
+		<p>Dưới đây là những món ăn được yêu thích nhất của chúng tôi:</p>
+		<div class="row">
+			<div class="col-md-6 col-lg-4">
+				<div class="card">
+                	<img src="fried_noodles.jpg" class="card-img-top" alt="Mi xao hai san">
+						<div class="card-body">
+                        <h5 class="card-title">Mì Xào</h5>
+							<p class="card-text">Mì xào thơm ngon với thực phẩm tươi sống và gia vị đậm đà chuẩn vị.</p>
+							<a href="MiXao.html" class="btn btn-primary">Xem Thêm</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="card">
+						<img src="pizza.jpg" class="card-img-top" alt="Pizza hai san">
+						<div class="card-body">
+							<h5 class="card-title">Pizza</h5>
+							<p class="card-text">Pizza với nền bánh giòn mỏng, phủ đầy topping tươi ngon và phô mai béo ngậy.</p>
+							<a href="Pizza.html" class="btn btn-primary">Xem Thêm</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="card">
+						<img src="sandwich.jpg" class="card-img-top" alt="Sandwich ga">
+						<div class="card-body">
+							<h5 class="card-title">Sandwich</h5>
+							<p class="card-text">Sandwich thơm ngon với thịt tẩm bột giòn rụm, rau sống và sốt mù tạt tuyệt vời.</p>
+							<a href="Sandwich.html" class="btn btn-primary">Xem Thêm</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="card">
+						<img src="fries.jpg" class="card-img-top" alt="Khoai tay chien">
+						<div class="card-body">
+							<h5 class="card-title">Thức Ăn Nhẹ</h5>
+							<p class="card-text">Thức ăn nhẹ là món tráng miệng hoàn hảo để kết thúc bữa ăn và phù hợp với mọi người.</p>
+							<a href="ThucAnNhe.html" class="btn btn-primary">Xem Thêm</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="card">
+						<img src="drink.jpg" class="card-img-top" alt="Nuoc ngot">
+						<div class="card-body">
+							<h5 class="card-title">Thức Uống</h5>
+							<p class="card-text">Chúng tôi cung cấp các loại nước ngọt mát lạnh để kèm theo bữa ăn.</p>
+							<a href="ThucUong.html" class="btn btn-primary">Xem Thêm</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="khung">
+			<div class="row">
+				<div class="col-sm-3">
+					<p class="tieude">Danh Mục Món Ăn</p>
+					<p class="noidung">Mì Xào</p>
+					<p class="noidung">Pizza</p>
+					<p class="noidung">Sandwich</p>
+					<p class="noidung">Thức Ăn Nhẹ</p>
+					<p class="noidung">Thức Uống</p>
+				</div>
+				<div class="col-sm-3">
+					<p class="tieude">Về Chúng Tôi</p>
+					<p class="noidung">Tin Khuyến Mãi</p>
+					<p class="noidung">Tuyển Dụng</p>
+					<p class="noidung">Tin Tức</p>
+				</div>
+				<div class="col-sm-3">
+					<p class="tieude">Liên Hệ</p>
+					<p class="noidung">Theo Dõi Đơn Hàng</p>
+					<p class="noidung">Chuỗi Cửa Hàng</p>
+					<p class="noidung">Liên Hệ</p>
+				</div>
+				<div class="col-sm-3">
+					<p class="tieude">Chính Sách</p>
+					<p class="noidung">Chính Sách Hoạt Động</p>
+					<p class="noidung">Chính Sách Và Quy Định</p>
+					<p class="noidung">Chính Sách Bảo Mật Thông Tin</p>
+				</div>
+			</div>
+			<p style="color: white; text-align: center">&copy; 2023 Cửa Hàng Khải and Khánh. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

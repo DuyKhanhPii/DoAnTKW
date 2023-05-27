@@ -1,0 +1,192 @@
+/* style.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+/* Header */
+header {
+  background-color: #6495ED;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+
+/* Hero Section */
+.hero {
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Menu Section */
+.menu {
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.menu p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.menu .row {
+  margin-bottom: 20px;
+}
+
+.menu .card {
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu .card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+.menu .card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+
+.menu .card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+
+.menu .card-body {
+  background-color: #fff;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+.menu .card-body:hover {
+  background-color: #f5f5f5;
+}
+
+.menu .btn-primary {
+  background-color: #FF4500;
+  border-color: #FF4500;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.menu .btn-primary:hover {
+  background-color: #FF6347;
+  border-color: #FF6347;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact .row {
+  margin-bottom: 20px;
+}
+
+.contact .col {
+  margin-bottom: 20px;
+}
+
+.contact .btn-primary {
+  background-color: #FF4500;
+  border-color: #FF4500;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.contact .btn-primary:hover {
+  background-color: #FF6347;
+  border-color: #FF6347;
+}
+.khung{
+	height: auto;
+	background-color: rgba(34,32,32,1.00);
+}
+.tieude{
+	color: white;
+}
+.noidung{
+	color: gray;
+	padding: 0px;
+}
